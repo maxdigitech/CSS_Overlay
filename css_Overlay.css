@@ -1,75 +1,63 @@
 /*Overlay Effect*/
 
 .containerOverlay{
-  position: relative;
-  width: 300px;
-  height: 500px;
+position: relative;
 }
 
-.imageSize300500{
-  width: 300px;
-  height: 500px;
+.Size300500{
+width: 300px;
+height: 500px;
 }
 
-.image1 {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
+.image {
+opacity: 1;
+display: block;
+transition: .5s ease;
 }
 
 .containerOverlay:hover .image1 {
-  opacity: 0.3;
-}
-
-.image2 {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-}
-
-.containerOverlay:hover .image2 {
-  opacity: 1;
+opacity: 0.3;
 }
 
 /*
-  Setting warna background apabila anda menggunakan text
-  background-color: [warna];
-  
-  Pengaturan transisi (dalam detik)
+Setting warna background apabila anda menggunakan text
+	background-color: [warna];
+
+Pengaturan transisi (dalam detik)
 	transition: Xs ease;
 */
 .contentOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+opacity: 0;
+transition: .5s ease;
+background-color: black;
 }
 
 /*Setting opasitas overlay sesuai dengan kebutuhan.*/
 .containerOverlay:hover .contentOverlay {
-  opacity: 1;
+opacity: 1;
 }
 
 /*
-  Perubahan warna text
-    color: [warna];
+Perubahan warna text
+	color: [warna];
 
-  Perbuhan posisi text (ganti X dengan angka yang anda inginkan)
-    -webkit-transform: translate(X%, X%);
-    -ms-transform: translate(X%, X%);
-    transform: translate(X%, X%);
+Perbuhan posisi text (ganti X dengan angka yang anda inginkan)
+	-webkit-transform: translate(X%, X%);
+	-ms-transform: translate(X%, X%);
+	transform: translate(X%, X%);
 */
 .text{
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+color: white;
+font-size: 25px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 }
