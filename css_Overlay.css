@@ -34,6 +34,9 @@
 /*
   Setting warna background apabila anda menggunakan text
   background-color: [warna];
+  
+  Pengaturan transisi (dalam detik)
+	transition: Xs ease;
 */
 .contentOverlay {
   position: absolute;
